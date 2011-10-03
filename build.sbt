@@ -1,7 +1,5 @@
 import com.typesafe.startscript.StartScriptPlugin
 
-seq(StartScriptPlugin.startScriptForClassesSettings: _*)
-
 organization := "net.lstoll"
 
 name := "cider-endpoint"
@@ -19,5 +17,10 @@ libraryDependencies ++= Seq(
   "javax.servlet" % "servlet-api" % "2.5" % "provided"
 )
 
+seq(StartScriptPlugin.startScriptForClassesSettings: _*)
+
 resolvers += "Sonatype OSS Snapshots" at "http://oss.sonatype.org/content/repositories/snapshots/"
+
+
+
 
