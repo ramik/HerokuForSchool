@@ -1,18 +1,14 @@
-import com.typesafe.startscript.StartScriptPlugin
-
 organization := "net.lstoll"
 
 name := "cider-endpoint"
 
 version := "0.1"
 
-scalaVersion := "2.9.0-1"
-
-seq(webSettings :_*)
+scalaVersion := "2.9.1"
 
 libraryDependencies ++= Seq(
-  "org.scalatra" %% "scalatra" % "2.0.0.RC1",
-  "org.scalatra" %% "scalatra-scalate" % "2.0.0.RC1",
+  "org.scalatra" %% "scalatra" % "2.0.0",
+  "org.scalatra" %% "scalatra-scalate" % "2.0.0",
   "org.eclipse.jetty" % "jetty-webapp" % "7.4.5.v20110725",
   "org.eclipse.jetty" % "jetty-server" % "7.4.5.v20110725",
   "org.slf4j" % "slf4j-simple" % "1.6.1",
@@ -21,4 +17,3 @@ libraryDependencies ++= Seq(
 
 resolvers += "Sonatype OSS Snapshots" at "http://oss.sonatype.org/content/repositories/snapshots/"
 
-seq(StartScriptPlugin.startScriptForClassesSettings: _*)
