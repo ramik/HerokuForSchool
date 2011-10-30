@@ -4,7 +4,7 @@
 @color4: #AED8BB;
 @color5: #FAF2C4;
 
-
+@candidatewidth: 350px;
 #header {
     color: @color;
 }
@@ -15,18 +15,30 @@ h1 {
 
 .candidates {
     float: left;
-    width: 350px;
+    width: @candidatewidth;
     padding: 10px;
+}
+
+.candidateitem {
+    width: @candidatewidth;
     background: @color3;
     border-radius: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
 }
 
 .solutions {
     float: right;
     width: 350px;
     padding: 10px;
+}
+
+.solutionitem {
+    width: @candidatewidth;
     background: @color3;
     border-radius: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
 }
 
 .content {
