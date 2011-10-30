@@ -7,3 +7,7 @@ resolvers += {
 libraryDependencies <<= (libraryDependencies, sbtVersion) { (deps, version) =>
     deps :+ ("com.typesafe.startscript" % "xsbt-start-script-plugin" % "0.3.0" extra("sbtversion" -> version))
 }
+
+resolvers += "sbt-idea-repo" at "http://mpeltonen.github.com/maven/"
+
+addSbtPlugin("com.github.mpeltonen" % "sbt-idea" % "0.11.0")

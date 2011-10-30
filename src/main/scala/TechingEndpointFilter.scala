@@ -2,7 +2,7 @@ import org.scalatra._
 import java.net.URL
 import scalate.ScalateSupport
 
-class CiderEndpointFilter extends ScalatraFilter with ScalateSupport {
+class TechingEndpointFilter extends ScalatraFilter with ScalateSupport {
   
   get("/") {
     <html>

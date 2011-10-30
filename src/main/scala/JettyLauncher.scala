@@ -8,7 +8,7 @@ object JettyLauncher {
     val server = new Server(port)
     val context = new ServletContextHandler(server, "/", ServletContextHandler.SESSIONS)
 
-    context.addFilter(classOf[CiderEndpointFilter], "/*", 0)
+    context.addFilter(classOf[TechingEndpointFilter], "/*", 0)
     context.addServlet(classOf[DefaultServlet], "/");
     context.setResourceBase("src/main/webapp")
 

@@ -1,10 +1,8 @@
 import com.typesafe.startscript.StartScriptPlugin
 
-organization := "net.lstoll"
+name := "TeachingAssistant"
 
-name := "cider-endpoint"
-
-version := "0.1"
+version := "0.1.0"
 
 scalaVersion := "2.9.1"
 
